@@ -67,10 +67,11 @@ The system will generate SQL, run it, and display results.
 
 Here are some example outputs of complex queries where the system successfully generated correct SQL:
 
-### Hard Level Query 1
+## Hard Level Query
+### Example 1
 ![Example 1](tested_images/CSV_Hard_%20Level_Query.png)
 
-### Query 2: Average salary per department
+### Example 2
 ![Example 2](tested_images/Excel_Hard_Level_Query.png)
 
 
@@ -85,23 +86,23 @@ Here are some example outputs of complex queries where the system successfully g
 
 nl2sql_system_app/
 │
-├── tested_images/
+├── tested_images/           # Demo screenshots
 │   ├── CSV_Hard_Level_Query.png
 │   └── Excel_Hard_Level_Query.png
 │
-├── MVP/                      # Minimum Viable Product experiments
-├── Practice files/           # Practice and test files
+├── MVP/                     # Minimum Viable Product experiments
+├── Practice files/          # Practice and test files
 │
-├── app2.py                   # Streamlit frontend
-├── loader.py                 # File loading & SQLite conversion
-├── db_connector.py           # Database connection helper
-├── nl2sql.py                 # NL2SQL query execution
-├── utils.py                  # SQL cleaning & extraction
+├── app2.py                  # Streamlit frontend
+├── loader.py                # File loading & SQLite conversion
+├── db_connector.py          # Database connection helper
+├── nl2sql.py                # NL2SQL query execution
+├── utils.py                 # SQL cleaning & extraction
 │
-├── requirements.txt          # Python dependencies
-├── README.md                 # Project documentation
-├── LICENSE                   # MIT License
-└── .gitignore                # Git ignore rules
+├── requirements.txt         # Python dependencies
+├── README.md                # Project documentation
+├── LICENSE                  # MIT License
+└── .gitignore              # Git ignore rules
 
 Future Improvements
     Add query history logging for analytics
