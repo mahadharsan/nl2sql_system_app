@@ -6,18 +6,18 @@ A production-ready Python application that converts **natural language questions
 
 ## **Features**
 
-- ✅ Upload **CSV, TSV, Excel (multi-sheet), JSON, Parquet, Feather, YAML, XML, HDF5, SAS, Stata, compressed files**  
-- ✅ Connect directly to **SQLite, PostgreSQL, MySQL, SQL Server**  
-- ✅ Automatically generate SQL from natural language questions using **LangChain + Ollama**  
-- ✅ Modular and production-ready architecture:
+- Upload **CSV, TSV, Excel (multi-sheet), JSON, Parquet, Feather, YAML, XML, HDF5, SAS, Stata, compressed files**  
+- Connect directly to **SQLite, PostgreSQL, MySQL, SQL Server**  
+- Automatically generate SQL from natural language questions using **LangChain + Ollama**  
+- Modular and production-ready architecture:
   - `loader.py` → file loading and SQLite conversion  
   - `db_connector.py` → database connection helper  
   - `nl2sql.py` → NL2SQL execution pipeline  
   - `utils.py` → SQL cleaning & extraction  
   - `app.py` → Streamlit frontend  
 
-- ✅ Returns results as **pandas DataFrame**, scalar value, or error-friendly messages  
-- ✅ Supports **multi-file formats** and **large datasets**  
+- Returns results as **pandas DataFrame**, scalar value, or error-friendly messages  
+- Supports **multi-file formats** and **large datasets**  
 
 ---
 
@@ -40,7 +40,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 
-Usage
+## Usage
 1. Run the Streamlit app
 streamlit run app.py
 
@@ -68,34 +68,40 @@ The system will generate SQL, run it, and display results.
 Here are some example outputs of complex queries where the system successfully generated correct SQL:
 
 ### Hard Level Query 1
-![Example 1](tested_images/CSV_Hard_Level_Query.png)
+![Example 1](tested_images/CSV_Hard_%20Level_Query.png)
 
 ### Query 2: Average salary per department
 ![Example 2](tested_images/Excel_Hard_Level_Query.png)
 
 
-
-Technologies Used
+## Technologies Used
     Python 3.10+
     Pandas, SQLAlchemy – data handling & SQL execution
     LangChain, Ollama LLM – natural language to SQL conversion
     Streamlit – frontend UI
     Openpyxl, xlrd, odfpy, PyArrow, PyYAML – file format support
 
-Folder Structure
+## Folder Structure
 
-nl2sql_app/
+nl2sql_system_app/
 │
-├─ app.py                # Streamlit frontend
-├─ loader.py             # File loading & SQLite conversion
-├─ db_connector.py       # Database connection helper
-├─ nl2sql.py             # NL2SQL query execution
-├─ utils.py              # SQL cleaning & extraction
-├─ requirements.txt
-├─ README.md
-└─ images/
-    ├─ CSV_Hard_Level_Query.png
-    └─ Excel_Hard_Level_Query.png
+├── tested_images/
+│   ├── CSV_Hard_Level_Query.png
+│   └── Excel_Hard_Level_Query.png
+│
+├── MVP/                      # Minimum Viable Product experiments
+├── Practice files/           # Practice and test files
+│
+├── app2.py                   # Streamlit frontend
+├── loader.py                 # File loading & SQLite conversion
+├── db_connector.py           # Database connection helper
+├── nl2sql.py                 # NL2SQL query execution
+├── utils.py                  # SQL cleaning & extraction
+│
+├── requirements.txt          # Python dependencies
+├── README.md                 # Project documentation
+├── LICENSE                   # MIT License
+└── .gitignore                # Git ignore rules
 
 Future Improvements
     Add query history logging for analytics
