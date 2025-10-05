@@ -67,7 +67,6 @@ The system will generate SQL, run it, and display results.
 
 Here are some example outputs of complex queries where the system successfully generated correct SQL:
 
-## Hard Level Query
 ### Example 1
 ![Example 1](tested_images/CSV_Hard_%20Level_Query.png)
 
@@ -83,26 +82,23 @@ Here are some example outputs of complex queries where the system successfully g
     Openpyxl, xlrd, odfpy, PyArrow, PyYAML – file format support
 
 ## Folder Structure
-
+```
 nl2sql_system_app/
-│
-├── tested_images/           # Demo screenshots
+├── tested_images/
 │   ├── CSV_Hard_Level_Query.png
 │   └── Excel_Hard_Level_Query.png
-│
-├── MVP/                     # Minimum Viable Product experiments
-├── Practice files/          # Practice and test files
-│
-├── app2.py                  # Streamlit frontend
-├── loader.py                # File loading & SQLite conversion
-├── db_connector.py          # Database connection helper
-├── nl2sql.py                # NL2SQL query execution
-├── utils.py                 # SQL cleaning & extraction
-│
-├── requirements.txt         # Python dependencies
-├── README.md                # Project documentation
-├── LICENSE                  # MIT License
-└── .gitignore              # Git ignore rules
+├── MVP/
+├── Practice files/
+├── app2.py
+├── loader.py
+├── db_connector.py
+├── nl2sql.py
+├── utils.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
 Future Improvements
     Add query history logging for analytics
