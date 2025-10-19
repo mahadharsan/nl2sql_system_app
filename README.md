@@ -82,23 +82,23 @@ Here are some example outputs of complex queries where the system successfully g
     Openpyxl, xlrd, odfpy, PyArrow, PyYAML – file format support
 
 ## Folder Structure
-```
-nl2sql_system_app/
-├── tested_images/
-│   ├── CSV_Hard_Level_Query.png
-│   └── Excel_Hard_Level_Query.png
-├── MVP/
-├── Practice files/
-├── app2.py
-├── loader.py
-├── db_connector.py
-├── nl2sql.py
-├── utils.py
-├── requirements.txt
-├── README.md
-├── LICENSE
-└── .gitignore
-```
+    ```
+    nl2sql_system_app/
+    ├── tested_images/
+    │   ├── CSV_Hard_Level_Query.png
+    │   └── Excel_Hard_Level_Query.png
+    ├── MVP/
+    ├── Practice files/
+    ├── app2.py
+    ├── loader.py
+    ├── db_connector.py
+    ├── nl2sql.py
+    ├── utils.py
+    ├── requirements.txt
+    ├── README.md
+    ├── LICENSE
+    └── .gitignore
+    ```
 
 Future Improvements
     Add query history logging for analytics
